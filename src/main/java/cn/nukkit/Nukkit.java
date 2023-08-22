@@ -29,12 +29,12 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import static cn.nukkit.utils.Utils.dynamic;
 
 /*
- * `_   _       _    _    _ _
- * | \ | |     | |  | |  (_) |
- * |  \| |_   _| | _| | ___| |_
- * | . ` | | | | |/ / |/ / | __|
- * | |\  | |_| |   <|   <| | |_
- * |_| \_|\__,_|_|\_\_|\_\_|\__|
+ *   _____                       _   _       _    _    _ _  __   __
+ *  |  __ \                     | \ | |     | |  | |  (_) | \ \ / /
+ * | |__) |____      _____ _ __|  \| |_   _| | _| | ___| |_ \ V /
+ * |  ___/ _ \ \ /\ / / _ \ '__| . ` | | | | |/ / |/ / | __| > <
+ * | |  | (_) \ V  V /  __/ |  | |\  | |_| |   <|   <| | |_ / . \
+ * |_|   \___/ \_/\_/ \___|_|  |_| \_|\__,_|_|\_\_|\_\_|\__/_/ \_\
  */
 
 /**
@@ -155,7 +155,7 @@ public class Nukkit {
 
         try {
             if (TITLE) {
-                System.out.print((char) 0x1b + "]0;Nukkit is starting up..." + (char) 0x07);
+                System.out.print((char) 0x1b + "]0;PowerNukkitX is starting up..." + (char) 0x07);
             }
             new Server(PATH, DATA_PATH, PLUGIN_PATH, language);
         } catch (Throwable t) {
