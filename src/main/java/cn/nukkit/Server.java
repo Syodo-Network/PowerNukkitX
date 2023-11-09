@@ -686,7 +686,7 @@ public class Server {
         this.baseLang = new BaseLang(langName);
         this.baseLangCode = mapInternalLang(langName);
 
-        var isShaded = StartArgUtils.isShaded();
+        /*var isShaded = StartArgUtils.isShaded();
         // 检测启动参数
         if (!StartArgUtils.isValidStart() || (JarStart.isUsingJavaJar() && !isShaded)) {
             log.fatal(getLanguage().tr("nukkit.start.invalid"));
@@ -699,7 +699,7 @@ public class Server {
             log.fatal(getLanguage().tr("nukkit.start.shaded2"));
             log.fatal(getLanguage().tr("nukkit.start.shaded3"));
             return;
-        }
+        }*/
 
         log.info(this.getLanguage().tr("language.selected", new String[]{getLanguage().getName(), getLanguage().getLang()}));
         log.info(getLanguage().tr("nukkit.server.start", TextFormat.AQUA + this.getVersion() + TextFormat.RESET));
